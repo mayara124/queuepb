@@ -28,4 +28,3 @@ Wqt.mmc <- function(t, c,lambda, mu){
   }
   
 }
-Wqt.mmc(0.01,2,1,0.55)

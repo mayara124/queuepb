@@ -106,5 +106,3 @@ fit.mmc <- function(data,n,c,alpha){
   pm
   
 }
-
-fit.mmc(data,10,3,3,0.05)
