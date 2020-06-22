@@ -60,19 +60,6 @@ fit.mmc <- function(data,n,c,alpha){
     stop("the data does not follow an exponential distribution")
   }
   
-  # Calculando as medidas de desempenho
-  
-  L <- r + ((r^(c+1)*c)/factorial(c)*(c-r)^2)*p0 # N? m?dio de usu?rios no sistema
-  Lq <- (p0*c*r^(c+1))/factorial(c)*(c-r)^2 # N? m?dio de usu?rios na fila
-  W <- 1/mu + (r^c*mu/factorial(c-1)*(c*mu - lambda)^2)*p0  # Tempo m?dio de perman?ncia no sistema
-  Wq <- (r^c*mu/factorial(c-1)*(c*mu - lambda)^2)*p0 ;Wq # Tempo m?dio de perman?ncia na fila
-  
-  # Matriz com as medidas de desempenho (performance measures)
-  
-  values.pm <- c(L, Lq, W, Wq)
-  
-  pm <- matrix(values.pm, 1, 4)
-  
   # Calculando a probabilidade do sistema estar vazio
   
   soma1 = 0
@@ -90,7 +77,21 @@ fit.mmc <- function(data,n,c,alpha){
   }
   
   
+  # Calculando as medidas de desempenho
   
+  L <- r + ((r^(c+1)*c)/factorial(c)*(c-r)^2)*p0 # N? m?dio de usu?rios no sistema
+  Lq <- (p0*c*r^(c+1))/factorial(c)*(c-r)^2 # N? m?dio de usu?rios na fila
+  W <- 1/mu + (r^c*mu/factorial(c-1)*(c*mu - lambda)^2)*p0  # Tempo m?dio de perman?ncia no sistema
+  Wq <- (r^c*mu/factorial(c-1)*(c*mu - lambda)^2)*p0 ;Wq # Tempo m?dio de perman?ncia na fila
+  
+  # Matriz com as medidas de desempenho (performance measures)
+  
+  values.pm <- c(L, Lq, W, Wq)
+  
+  pm <- matrix(values.pm, 1, 4)
+  
+  
+
   # Calculando a probabilidade de haver fila
   #p.queue <- rho^1
   
