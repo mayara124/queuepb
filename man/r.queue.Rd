@@ -21,6 +21,10 @@ will return values in the form of a matrix of four columns, with the arrival tim
 \description{
 function for the simulation of data imitating the operation of a queue model.
 }
+\examples{
+set.seed(10)
+data <- r.queue(10,2,1,4)
+}
 \author{
 Mayara Almeida
 }
