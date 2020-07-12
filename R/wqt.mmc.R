@@ -7,7 +7,7 @@
 #' @param mu average rate that represents an exponential distribution for the times of services.
 #' @return will return the probability value of the time that any user remains in the queue waiting for assistance.
 #' @author Mayara Almeida
-#' @example Wqt.mmc(2,3,1,0.55)
+#' @examples  Wqt.mmc(2,3,1,0.55)
 #' @export
 
 Wqt.mmc <- function(t, c,lambda, mu){

@@ -7,7 +7,7 @@
 #' @param alpha significance level for the Kolmogorov-Smirnov test.
 #' @return a list of all performance measures used.
 #' @author Mayara Almeida
-#' @example fit.mmc(data,10,3,0.05)
+#' @examples fit.mmc(data,10,3,0.05)
 #' @importFrom stats ks.test
 #' @export
 #' 

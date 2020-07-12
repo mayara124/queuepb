@@ -6,7 +6,7 @@
 #' @param mu average rate that represents an exponential distribution for the times of services.
 #' @return will return the probability value of the time that any user remains on the system.
 #' @author Mayara Almeida
-#' @example Wt.mm1<- function(5,3, 4)
+#' @examples  Wt.mm1<- function(5,3, 4)
 #' @export
 
 

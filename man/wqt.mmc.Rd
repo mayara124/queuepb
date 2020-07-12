@@ -22,6 +22,9 @@ will return the probability value of the time that any user remains in the queue
 \description{
 Cumulative queue waiting time distribution function.
 }
+\examples{
+ Wqt.mmc(2,3,1,0.55)
+}
 \author{
 Mayara Almeida
 }

@@ -19,6 +19,9 @@ a list of all performance measures used.
 \description{
 It allows to evaluate the efficiency of a system by analyzing its characteristics using performance measures.
 }
+\examples{
+fit.mm1(5,data,0.05)
+}
 \author{
 Mayara Almeida
 }
