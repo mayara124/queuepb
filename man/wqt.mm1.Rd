@@ -21,7 +21,7 @@ will return the probability value of the time that any user remains in the queue
 Cumulative queue waiting time distribution function.
 }
 \examples{
- Wqt.mm1 <- function(5,3,4)
+Wqt.mm1(5,3,4)
 }
 \author{
 Mayara Almeida
