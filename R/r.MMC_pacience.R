@@ -7,6 +7,7 @@
 #' @param n number of simulations interest you want to perform.
 #' @param lambda average rate that represents an exponential distribution for arrival times.
 #' @param mu average rate that represents an exponential distribution for the times of services.
+#' @param c number of servers.
 #' @param tau average rate that represents an exponential distribution for the times of tolerance
 #' @return will return values in the form of  three column matrix, with the arrival, service and departure times.
 #' @author Debora de Sousa Cordeiro

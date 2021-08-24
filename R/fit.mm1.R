@@ -6,13 +6,13 @@
 #' @param alpha significance level for the Kolmogorov-Smirnov test.
 #' @return a list of all performance measures used.
 #' @author Mayara Almeida
-#' @examples fit.mm1(5, data, 0.05)
+#' @examples fit.mm1(data,5,0.05)
 #' @importFrom stats ks.test
 #' @export
 #' 
 
 
-fit.mm1<- function(n,data,alpha){
+fit.mm1<- function(data,n,alpha){
   
   # OBS: "data" tem que ser uma matriz
   # alpha n?vel de signific?ncia definido pelo pesquisador.
@@ -61,7 +61,7 @@ fit.mm1<- function(n,data,alpha){
   
   # Calculando as medidas de desempenho
   
-  L <- rho/(1-rho) # N? m?dio de usu?rios no sistema
+  L <- rho/(1-rho) # Nº medio de usuarios no sistema
   Lq <- rho^2/(1-rho) # N? m?dio de usu?rios na fila
   W <- 1/(mu-lambda) # Tempo m?dio de perman?ncia no sistema
   Wq <- rho/(mu-lambda);Wq # Tempo m?dio de perman?ncia na fila
@@ -78,7 +78,7 @@ fit.mm1<- function(n,data,alpha){
   # Calculando a probabilidade de haver fila
   p.queue <- rho^1
   
-  # Sa?das
+  # Saidas
   
   cat("Rate Arrival = ", lambda, "\n\n")
   cat("Rate Service = ", mu, "\n\n")

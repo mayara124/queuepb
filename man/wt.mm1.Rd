@@ -21,7 +21,7 @@ will return the probability value of the time that any user remains on the syste
 Cumulative waiting time distribution function
 }
 \examples{
- Wt.mm1<- function(5,3, 4)
+ Wt.mm1(5,3, 4)
 }
 \author{
 Mayara Almeida

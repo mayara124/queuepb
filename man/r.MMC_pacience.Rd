@@ -9,6 +9,8 @@ r.MMC_pacience(n, c, lambda, mu, tau)
 \arguments{
 \item{n}{number of simulations interest you want to perform.}
 
+\item{c}{number of servers.}
+
 \item{lambda}{average rate that represents an exponential distribution for arrival times.}
 
 \item{mu}{average rate that represents an exponential distribution for the times of services.}

@@ -4,12 +4,12 @@
 \alias{fit.mm1}
 \title{performance measures}
 \usage{
-fit.mm1(n, data, alpha)
+fit.mm1(data, n, alpha)
 }
 \arguments{
-\item{n}{number of simulations interest you want to perform.}
-
 \item{data}{data set.}
+
+\item{n}{number of simulations interest you want to perform.}
 
 \item{alpha}{significance level for the Kolmogorov-Smirnov test.}
 }
@@ -20,7 +20,7 @@ a list of all performance measures used.
 It allows to evaluate the efficiency of a system by analyzing its characteristics using performance measures.
 }
 \examples{
-fit.mm1(5,data,0.05)
+fit.mm1(data,5,0.05)
 }
 \author{
 Mayara Almeida
