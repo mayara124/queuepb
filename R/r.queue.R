@@ -57,3 +57,5 @@ r.queue<- function(n,c,lambda,mu){
   return(cbind(tdc, tcs, saida, guiche))
   
 }
+ 
+
